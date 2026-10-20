@@ -3,25 +3,25 @@ Esse site foi solicitado por Osvaldo Pereira da Silva. Destinado para uma mecân
 
 ## Mer
 ### clientes
-id_cliente PK
-nome VARCHAR(100)
-carro VARCHAR (100)
-taxa BOOLEAN
+- id_cliente PK
+- nome VARCHAR(100)
+- carro VARCHAR (100)
+- taxa BOOLEAN
 
 ### mecanicos
-id_mecanico SERIAL PK
-nome VARCHAR (100)
-telefone CHAR (11)
+- id_mecanico SERIAL PK
+- nome VARCHAR (100)
+- telefone CHAR (11)
 
 ### servicos
-id_servico SERIAL PK
-problema TEXT
-solucao TEXT
-data DATE
-valor NUMERIC (10.2)
-situacao ENUM(situacao_pagamento)
-id_mecanico INTEGER FK
-id_cliente  INTEGER FK
+- id_servico SERIAL PK
+- problema TEXT
+- solucao TEXT
+- data DATE
+- valor NUMERIC (10.2)
+- situacao ENUM(situacao_pagamento)
+- id_mecanico INTEGER FK
+- id_cliente  INTEGER FK
 
 
 ### relacionamento
